@@ -3,7 +3,7 @@ use std::io::Read;
 use std::io::Result;
 
 pub fn solve() -> Result<()> {
-    let mut file = File::open("input/day1.txt")?;
+    let mut file = File::open("input/01.txt")?;
     let mut report = String::new();
     file.read_to_string(&mut report)?;
     let nums: Vec<i32> = report
